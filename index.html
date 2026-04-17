@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainable Digital Tourist Guide</title>
+  <link rel="favicon" href="images/logo.JPG" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header class="header">
+    <div class="header-content">
+      <img src="images/logo.JPG" alt="Project logo" class="logo">
+
+      <div class="title-block">
+        <h1>Sustainable Digital Tourist Guide</h1>
+        <p>Discover the most interesting places in our town.</p>
+      </div>
+
+      <img src="images/logo.JPG" alt="Project logo" class="logo">
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="map-section">
+      <h2>Town Map</h2>
+
+      <div class="map-container">
+        <img src="images/map.jpg" alt="Town map" class="map-image" />
+        <!-- POI markers -->
+        <!-- Add your POI marker here-->
+        <!-- Alejandro C, Javier M y Hugo Toro-->
+        <button class="marker" style="top: 27%; left: 49%;" data-poi="Viewpoint" aria-label="Viewpoint">📍</button>
+        <!-- Antonio F, Othmane -->
+        <button class="marker" style="top: 17%; left: 52%;" data-poi="llanos" aria-label="Los llanos">📍</button>
+        <!-- Raúl V. y Jaime L -->
+        <button class="marker" style="top: 43%; left: 51%;" data-poi="Angustias" aria-label="Angustias">📍</button> 
+        <!-- Candela C -->
+        <button class="marker" style="top: 50%; left: 40%;" data-poi="Historicalmovement" aria-label="Historicalmovement">📍</button>
+        <!-- Jose A. S y Jose M.-->
+        <!-- Oliver C y Jose A. B-->
+        <button class="marker" style="top: 57%; left: 53%;" data-poi="hotel" aria-label="Hotel">📍</button>
+        <!-- Sara L y Andrea N-->
+        <button class="marker" style="top: 38%; left: 55%;" data-poi="chapelEH" aria-label="chapel-EH">📍</button>
+        <!-- POIs for 4th grade studends-->
+        <button class="marker" style="top: 60%; left: 30%;" data-poi="busStop">📍</button>
+        <button class="marker" style="top: 65%; left: 60%;" data-poi="solarPlant">📍</button>
+        <button class="marker" style="top: 40%; left: 20%;" data-poi="park">📍</button>
+        <button class="marker" style="top: 30%; left: 70%;" data-poi="recyclingPoint">📍</button>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <h2>Point of Interest</h2>
+
+      <article id="poi-card" class="poi-card">
+        <img id="poi-image" src="images/church.jpg" alt="Point of interest" class="poi-image" />
+
+        <div class="poi-content">
+          <h3 id="poi-name">Select a place on the map</h3>
+          <p><strong>Category:</strong> <span id="poi-category">-</span></p>
+          <p id="poi-description">Click on a marker to see information about the place.</p>
+          <p><strong>Sustainable tip:</strong> <span id="poi-tip">-</span></p>
+
+          <div class="vote-buttons">
+            <button id="like-btn" type="button">👍 Like</button>
+            <button id="dislike-btn" type="button">👎 Dislike</button>
+          </div>
+
+          <p class="score-text">
+            Score: <span id="poi-score">0</span>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="ranking-section">
+      <h3>Rankings by Category</h3>
+      <div class="ranking-block">
+        <h4>Tourism</h4>
+        <ol id="ranking-tourism"></ol>
+      </div>
+      <div class="ranking-block">
+        <h4>Transport</h4>
+        <ol id="ranking-transport"></ol>
+      </div>
+      <div class="ranking-block">
+        <h4>Energy</h4>
+        <ol id="ranking-energy"></ol>
+      </div>
+      <div class="ranking-block">
+        <h4>Green</h4>
+        <ol id="ranking-green"></ol>
+      </div>
+      <div class="ranking-block">
+        <h4>Recycling</h4>
+        <ol id="ranking-recycling"></ol>
+      </div>
+    </aside>
+    
+  </main>
+
+  <footer class="footer">
+    <p>Project created by 3rd & 4th ESO students for the Bilingual School Days.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

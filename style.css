@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f7f5;
+  color: #222;
+}
+
+.header,
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #dcefe2;
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 0.8fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.map-section,
+.info-section,
+.ranking-section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.map-section h2,
+.info-section h2,
+.ranking-section h2 {
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+}
+
+.map-image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.marker {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.marker:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.poi-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.poi-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 240px;
+  border: 1px solid #ccc;
+}
+
+.poi-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.vote-buttons button,
+.reset-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #dcefe2;
+  font-weight: bold;
+}
+
+.vote-buttons button:hover,
+.reset-btn:hover {
+  background-color: #c5e3cf;
+}
+
+.score-text {
+  font-weight: bold;
+}
+
+.ranking-section ol {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.ranking-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  margin-top: 1rem;
+}
+
+.ranking-block li:first-child {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+.type-tourism { background: #dcefe2; }
+.type-transport { background: #d0e6ff; }
+.type-energy { background: #fff3cd; }
+.type-green { background: #d4edda; }
+.type-recycling { background: #e0f7fa; }
+
+.title-tourism { color: #2e7d32; }
+.title-transport { color: #1565c0; }
+.title-energy { color: #ef6c00; }
+.title-green { color: #1b5e20; }
+.title-recycling { color: #00838f; }
+
+.btn-tourism {
+  background: #c8e6c9;
+  border: none;
+  color: #1b5e20;
+}
+
+.btn-transport {
+  background: #bbdefb;
+  border: none;
+  color: #0d47a1;
+}
+
+.btn-energy {
+  background: #ffe082;
+  border: none;
+  color: #e65100;
+}
+
+.btn-green {
+  background: #c8e6c9;
+  border: none;
+  color: #1b5e20;
+}
+
+.btn-recycling {
+  background: #b2ebf2;
+  border: none;
+  color: #006064;
+}
+
+.poi-card,
+#poi-name,
+.vote-buttons button {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+}
+
+.title-block {
+  text-align: center;
+  flex: 1;
+}
